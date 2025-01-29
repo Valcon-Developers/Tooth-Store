@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="icon"       href="https://static.vecteezy.com/system/resources/previews/023/618/295/original/dental-icon-clipart-free-free-png.png" type="image/png">
+    <title>Cart Page</title>
+    <style>
+        footer{
+            margin-top:50px
+        }
+        @media(max-width:400px){
+            footer{
+                margin-top:200px
+            }
+            .pill{
+                height: 620px;
+            }
+        }
+    </style>
+</head>
+<body class="text-dark bg-light" style="min-height: 100vh;">
+
+    <!-- start navbar -->
+    <div id="navbar" class="sticky-top  bg-light text-dark  p-0">
+      <nav class="container navbar navbar-expand-lg navbar-light pr-5 ">
+          <a class="navbar-brand  mr-2   text-info" href="index.html"><img src="imgs/LOGO4.jpg" width="150px" height="40px" alt=""></a>
+
+          <li class="nav-item">
+              <a class="nav-link text-light ml-auto" href="cart.html" id="cartCounter"></a>
+          </li> 
+         
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+         
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                  <!-- <li class="nav-item active">
+                      <a class="nav-link text-dark" href="#">About<span class="sr-only">(current)</span></a>
+                  </li> -->
+                
+              </ul>
+          </div>
+           
+          
+      </nav>
+  </div>
+      
+    <div class="cartProduct container">
+        <div class=" container mt-1  row bg-light " >
+            <div class="cartcontent col-lg-6 col-md-12 col-sm-12"id="cartcontent" style=" overflow-y: auto; scrollbar-width:none;max-height: 620px; ">
+                                          
+            </div>
+
+    
+
+            <div class="pill col-6 col-lg-6 col-md-12 col-sm-12 text-info  m-auto mb-0 mt-0" style=" min-width:350px; height:620px;border-radius: 20px; border:solid black 2px">
+                   <p class=" text-light text-center mt-3    badge bg-info" style=" background-color: green;  font-size: 2em; " id="total"></p>
+                   <h5 class="badge bg-info text-light" >غير شامل مصاريف الشحن</h5> 
+                   
+                   <form action="https://docs.google.com/forms/d/e/1FAIpQLSft8lV4zJn6KAs6JCsWMwie7SvkA8ZOtjtvJOZAjjtLbSgCqg/formResponse" method="post"id="myForm" target="_blank" >
+
+                    <label for="name" class="h4 ">Name :</label>
+                    <br>
+                    <input type="text"   name="entry.1707612953"  id="name" placeholder="Full Name"     class="form-control" required >
+                    <br>
+
+                    <label for="phone"class="h4">Phone</label>
+                    <br>
+                    <input type="number" name="entry.1043765808" id="phone" placeholder="Phone Number" class="form-control" required>
+                    <br>
+
+                    <label for="address" class="h4">Address</label>
+                    <br>
+                    <input type="text" name="entry.1022079543" id="address" placeholder="Your Address" class="form-control" required>  
+                    <br>
+
+                    <label for="Products_input_names" class="h4">Products</label>
+                    <br>
+                    <input type="text" name="entry.2032303182" id="Products_input_names" class="form-control" readonly required></input>
+                    <h3 class="mt-4"><p class="badge badge-info">الدفع عند الاستلام</p></h3>
+                  
+                    <input type="submit" value="Order Now" class="form-control btn btn-info" style=" font-size: 1.4em; font-weight: bold; border-radius: 20px;" onclick="clear()">
+
+                   
+
+                   </form>
+            </div>
+
+
+
+        </div>
+    </div>
+  <!-- start footer -->
+
+  <footer style="" class="text-light text-center bg-info h6 p-3 mb-0">Developed By <a href="https://www.instagram.com/bdljwd478?igsh=MXNlNWJsaWJtb3A5cA==" target="_blank">Mohammed Abdelgawad</a></footer>
+  <!-- <script src="main.js"></script> -->
+
+    <script src="js/main.js"></script>
+    <script>
+        showcart();
+        getTotal();
+        get_Products_input_names()
+        get_cart_number();
+    </script>
+       <script src="js/popper.min.js"></script>
+       <script src="js/jquery-3.7.1.js"></script>
+       <script src="js/bootstrap.js"></script>
+
+
+
+       <script>
+          let tools = document.getElementById('Products_input_names').value;
+        
+          const form = document.getElementById('myForm');
+
+          form.addEventListener('submit', function(event) {
+          // هنا نضع الشرط الذي نريد بناء عليه منع الإرسال
+          let cartProducts = JSON.parse(localStorage.getItem('cart'));
+          if (tools == ''|| cartProducts.length===0 ) {
+          event.preventDefault();  // منع الإرسال
+          alert('برجاء اختيار المنتجات اولا');
+          }
+          if(tools !==''){
+
+          
+
+            setTimeout(function() {
+    // Reset the form
+    form.reset();
+
+    // Clear the cart array
+    let cartProducts = ['item1', 'item2', 'item3', 'item4'];
+    cartProducts.splice(0, cartProducts.length);  // Empty the cart array
+
+    // Update local storage with the empty cart
+    localStorage.setItem('cart', JSON.stringify(cartProducts));
+
+    // Clear the cart content in the DOM
+    cartcontent.innerHTML = "";
+
+    // Call functions to update cart display and calculations
+    showcart();
+    getTotal();
+    get_Products_input_names();
+    get_cart_number();
+}, 1500); // Delay of 1000 milliseconds (1 second)
+          }
+          }
+         );
+
+       
+
+         
+        
+      </script>
+
+
+
+
+</body>
+</html>
+
+
