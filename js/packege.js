@@ -2,7 +2,7 @@ let packge=[
     // {id:1,title:"Semester 1",price:15000,source:"imgs/Box.jpg",description: "packges/semester1",order:""},
     // {id:2,title:"Semester 2",price:15000,source:"imgs/Box.jpg",description: "packges/semester2",order:""},
     // {id:3,title:"Semester 3",price:15000,source:"imgs/Box.jpg",description: "packges/semester2",order:"التوصيل مجانا"},
-    {id:4,title:"Semester 4",price:5900 ,source:"imgs/Box.jpg",description: "packges/semester4",order:"التوصيل مجانا"},
+    {id:4,title:"Semester 4",price:6350 ,source:"imgs/Box.jpg",description: "packges/semester4",order:"التوصيل مجانا"},
     // {id:5,title:"Semester 5",price:10000,source:"imgs/Box.jpg",description: "packges/semester4",order:"التوصيل مجانا"},
     
     
