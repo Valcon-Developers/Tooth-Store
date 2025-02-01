@@ -3,7 +3,7 @@ let packge=[
     // {id:2,title:"Semester 2",price:15000,source:"imgs/Box.jpg",description: "packges/semester2",order:""},
     // {id:3,title:"Semester 3",price:15000,source:"imgs/Box.jpg",description: "packges/semester2",order:"التوصيل مجانا"},
     {id:4,title:"Semester 4",price:6300 ,source:"imgs/Box.jpg",description: "packges/semester4",order:"التوصيل مجانا"},
-    {id:4,title:"عرض الخمس صحاب",price:4900,price2:"5900 EGP",source:"imgs/Box.jpg",description: "packges/semester4",order:""},
+    {id:4,title:"عرض الخمس صحاب",price:5300,price2:"6300 EGP",source:"imgs/Box.jpg",description: "packges/semester4",order:""},
     // {id:5,title:"Semester 5",price:10000,source:"imgs/Box.jpg",description: "packges/semester4",order:"التوصيل مجانا"},
     
     
