@@ -11,7 +11,7 @@ let products=[
     // {id:8,title:"Full-arch tray",price:0,source:"https://tse1.mm.bing.net/th?id=OIP.0LavsCFGY_AXrc1aUXrVJgHaHa&pid=Api&P=0&h=220",description:"Full-arch trays (both metal and plastic)"},
     // {id:9,title:"Gutta Perch",price:0,source:'https://tse4.mm.bing.net/th?id=OIP.LP92dHnlmb_kzUuyi1cslwHaE5&pid=Api&P=0&h=220',description:""},
     // {id:10,title:"Sealers",price:0,source:"https://www.safcodental.com/photos/products/large/20181220164203/endodontics/sealers-and-cements/tubli-seal-xpress-and-tubli-seal-ewt-xpress.jpg",description:""},
-     {id:11,title:"putty silicona condensacion",price:805,source:"https://www.dentaltix.com/en/sites/default/files/styles/large/public/silaxil-putty-silicona-condensacion.png?itok=DIrSOTh2",description:""},
+     // {id:11,title:"putty silicona condensacion",price:885,source:"https://www.dentaltix.com/en/sites/default/files/styles/large/public/silaxil-putty-silicona-condensacion.png?itok=DIrSOTh2",description:""},
     // {id:12,title:"charm temprycrown",price:0,source:"https://tse3.mm.bing.net/th?id=OIP.bncBifpGya_VuRiX9toG4QAAAA&pid=Api&P=0&h=220",description:""},
 
     // {id:13,title:"Mask",price:30,source:"https://tse4.mm.bing.net/th?id=OIP.sgTzd_WSnvN1SZTL7Sfz-wHaHa&pid=Api&P=0&h=220",description:""},
