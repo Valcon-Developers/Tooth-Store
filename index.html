@@ -118,20 +118,51 @@
     </div>
     <!-- end products -->
 
+    <!-- start questationar  -->
 
+
+    <div id="contact" class="bg-light">
+        <div class="container mt-5 py-5 ">
+            <div class="row w-100 ">
+                <div class="col-lg-6 col-md-12 col-sm-12 h4 text-info py-3"> Write The None Execsting Needed Tools Here</div>
+                <div class="col-lg-6 col-md-12 col-sm-12"> 
+                    <form id="question" action=" https://docs.google.com/forms/d/e/1FAIpQLScKm_KB-jJmcEHR78l5lKA7pwvIKj6Ml66QmFV0xP3CtW0lOw/formResponse" method="GET" target="_blank">
+        
+                        <input  type="text" name="entry.848856088" class="form-control" placeholder="Your Needed Tools" required  onsubmit="clean()">
+                        <div class="d-flex" style="gap:10px">
+                            <input type="submit" name="" id="" class="btn btn-info w-100 mt-2"onclick="clean()">  
+                            <!-- <div class="btn btn-danger w-100 mt-2" onclick="clean()"> clear </div>   -->
+                        </div> 
+ 
+                    </form>
+                </div>
+            </div>
+        </div>
+       </div>
+    
+    
+        <!-- end questationar -->
     
   <!-- start footer -->
 
 <footer class="text-light text-center bg-info h6 p-3 mt-5 mb-0">Developed By <a href="https://www.instagram.com/bdljwd478?igsh=MXNlNWJsaWJtb3A5cA==" target="_blank">Mohammed Abdelgawad</a></footer>
     <!-- <script src="main.js"></script> -->
     <script>
-        // get_cart_number();
-  
+        function clean(){
+            let question = document.getElementById("question");
+
+            setTimeout(() => {
+                question.reset();          
+                
+            },1500);
+
+        }
     </script>
     <!-- <script src="search.js"></script> -->
      <script src="js/popper.min.js"></script>
      <script src="js/jquery-3.7.1.js"></script>
      <script src="js/bootstrap.js"></script>
+     <script src="js/products.js"></script>
      <script src="js/main.js"></script>
 
     </body>
