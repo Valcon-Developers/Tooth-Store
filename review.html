@@ -91,7 +91,7 @@
 <!-- start navbar -->
     <div id="navbar" class="sticky-top  navbar-light bg-light text-dark p-0">
         <nav class="container navbar navbar-expand-lg navbar-light  ">
-            <a class="navbar-brand  text-info"style="margin-left:7px;margin-top:-15px" href="index.html"><img src="imgs/LOGO4.jpg" width="200px" style=" width:150px; max-height: 40px;"  alt=""></a>
+            <a class="navbar-brand text-info"style="margin-top:-10px;font-size:23px" href="index.html"><img src="imgs/unnamed.jpg"  style=" width:45px; max-height: 40px;"  alt=""><img src="imgs/LOGO4.jpg"  style=" width:105px; max-height: 40px;"  alt=""></a>
 
             <li class="nav-item">
                 <a class="nav-link text-light" style="margin-left:-30px" href="cart.html" id="cartCounter"></a>
@@ -136,7 +136,9 @@
   <div class="overlay" id="imageOverlay" onclick="closeOverlay()">
     <img id="overlayImage" src="" alt="Review Image">
   </div>
-
+<div class="container">
+  <a href="comments.html" class="btn btn-primary  d-flex justify-content-center rounded m-auto "><i class="fa fa-sold fa-comment-dots h4 pt-2"></i> <p class="p-1">اترك تعليق</p></a>
+</div>
   <footer class="text-light text-center bg-info h6 p-3 mt-5 mb-0">
     Developed By 
     <a href="https://www.instagram.com/bdljwd478?igsh=MXNlNWJsaWJtb3A5cA==" target="_blank">
@@ -149,12 +151,79 @@
     const imageContainer = document.getElementById("reviewsContainer");
     const videoContainer = document.getElementById("videosContainer");
 
-    const numberOfImages = 53; // ← عدّل عدد الصور هنا حسب الموجود عندك
+    const numberOfImages = 48; // ← عدّل عدد الصور هنا حسب الموجود عندك
     const numberOfVideos = 1;  // ← وعدد الفيديوهات
 
+   let images=[
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(1).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(2).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(3).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(12).jpg?raw=true',
+
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(19).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(20).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(21).jpg?raw=true',      
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(26).jpg?raw=true',
+
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(27).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(28).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(29).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(32).jpg?raw=true',
+       
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(33).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(34).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(35).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(36).jpg?raw=true',
+
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(37).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(38).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(39).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(40).jpg?raw=true',
+
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(41).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(42).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(43).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(44).jpg?raw=true',
+
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(45).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(46).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(47).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(48).jpg?raw=true',
+
+
+
+
+
+
+
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(49).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(50).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(51).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(52).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(53).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(9).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(5).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(6).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(7).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(13).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(14).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(15).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(16).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(17).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(18).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(22).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(23).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(24).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(25).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(23).jpg?raw=true',
+      'https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(31).jpg?raw=true',
+
+
+
+    ]
     // عرض الصور
-    for (let i = 1; i <= numberOfImages; i++) {
-      const src = ` https://github.com/Valcon-Developers/tooth-store-images/blob/main/1%20(${i}).jpg?raw=true`;
+    for (let i = 0; i <= numberOfImages; i++) {
+      const src = images[i] ;
 
       const card = document.createElement("div");
       card.className = "card";
