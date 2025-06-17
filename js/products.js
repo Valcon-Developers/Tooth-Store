@@ -62,7 +62,7 @@ let products=[
     
 
 
-    {id:52,title:"Light curing unit",price:1650,source:'http://www.dentalaaka.com/uploaded_files/products/1084.jpg',description:"RTA Pro"},
+    {id:2,title:"Light curing unit",price:1650,source:'http://www.dentalaaka.com/uploaded_files/products/1084.jpg',description:"RTA Pro"},
     {id:53,title:"Nano Hybrid Composite X1",price:190,source:'https://www.dentaltix.com/es/sites/default/files/styles/large/public/composite-nano-hibrido.jpg?itok=FdVLFcJQ',description:""},
     {id:54,title:"Composite applicator",price:45,source:'https://images-na.ssl-images-amazon.com/images/I/51OBAgE3C6L._SL1000_.jpg',description:""},
     {id:55,title:"Amalgam Capsules x 10",price:350,source:'https://www.recende-dental.com/media/19/Amalgam%20Capsule%20(1).jpg',description:""},

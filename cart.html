@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="icon"       href="https://static.vecteezy.com/system/resources/previews/023/618/295/original/dental-icon-clipart-free-free-png.png" type="image/png">
+    <link rel="icon"       href="imgs/unnamed.jpg" type="image/jpg">
     <title>Cart Page</title>
     <style>
         footer{
@@ -55,14 +55,14 @@
     </div>
     <!-- end navbar -->    
     <div class="cartProduct container">
-        <div class=" container mt-1  row bg-light " >
-            <div class="cartcontent col-lg-6 col-md-12 col-sm-12"id="cartcontent" style=" overflow-y: auto; scrollbar-width:none;max-height: 620px; ">
+        <div class="mt-1  row bg-light p-1 " >
+            <div class="cartcontent  col-lg-6 col-md-12 col-sm-12 "id="cartcontent" style=" min-width:344px; overflow-y: auto; scrollbar-width:none;max-height: 620px; ">
                                           
             </div>
 
     
 
-            <div class="pill col-6 col-lg-6 col-md-12 col-sm-12 text-info  m-auto mb-0 mt-0" style=" min-width:350px; height:620px;border-radius: 20px; border:solid black 2px">
+            <div class="pill col-lg-6 col-md-12 col-sm-12 text-info " style=" height:580px;border-radius: 20px; border:solid black 2px">
                    <p class=" text-light text-center mt-3    badge bg-info" style=" background-color: green;  font-size: 2em; " id="total"></p>
                    <h5 class="badge bg-info text-light" >غير شامل مصاريف الشحن</h5> 
                    
@@ -83,12 +83,17 @@
                     <input type="text" name="entry.1022079543" id="address" placeholder="Your Address" class="form-control" required>  
                     <br>
 
-                    <label for="Products_input_names" class="h4">Products</label>
+                    <label  class="h4 pb-2">Payment   <i class="fa-solid fa-money-bill text-success"></i></label>
                     <br>
-                    <input type="text" name="entry.2032303182" id="Products_input_names" class="form-control" readonly required></input>
-                    <h3 class="mt-4"><p class="badge badge-info">الدفع عند الاستلام</p></h3>
+                    <input type="radio" name="entry.1292886236" value="Upon receipt" id="Upon receipt" checked>
+                    <label class=" text-dark pl-3" for="Upon receipt"> <i class="fa-solid fa-truck text-warning h4 mr-1"></i> عندالاستلام </label>
+                    <br>                    
+                    <input type="radio" name="entry.1292886236" value="instapay" id="instapay">
+                    <label class=" pl-3" for="instapay"> <i style="color: #28a745;" class="fa-solid fa-credit-card h4  mr-1"></i> Instapay</label>
+                    <br>
+                    <input type="hidden" name="entry.2032303182" id="Products_input_names" required>
                   
-                    <input type="submit" value="Order Now" class="form-control btn btn-info" style=" font-size: 1.4em; font-weight: bold; border-radius: 20px;" onclick="clear()">
+                    <input type="submit" value="Order Now" class="form-control btn btn-info mt-3" style=" font-size: 1.4em; font-weight: bold; border-radius: 20px;" onclick="clear()">
 
                    
 

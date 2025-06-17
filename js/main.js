@@ -72,12 +72,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
 function addToCart(productId) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    cart.push(products[productId]);
+
+    // جلب المنتج المطلوب
+    let selectedProduct = products[productId];
+
+    // البحث عن المنتج داخل السلة
+    let existingProduct = cart.find(item => item.id === selectedProduct.id);
+
+    if (existingProduct) {
+        // لو المنتج موجود: زوّد الكمية
+        existingProduct.amount += 1;
+    } else {
+        // لو المنتج جديد: ضيفه بالسلة مع amount = 1
+        selectedProduct.amount = 1;
+        cart.push(selectedProduct);
+    }
+
+    // حفظ التغييرات
     localStorage.setItem('cart', JSON.stringify(cart));
-    let count = JSON.parse( localStorage.getItem('cart') )
+
+    // تحديث عدد السلة
     get_cart_number();
 }
 
@@ -85,21 +101,61 @@ function addToCart(productId) {
 
 
 
-function cartProduct(cartProducts,id){
-    return`
-      <div class="box d-flex  w-100 pt-5 pb-3 text-dark" style="border-bottom:2px black solid ;">
-                    <img src="${cartProducts[id].source}" width="100px" alt="" class="" style="border-radius: 20px;">
-                    <div class="boxBody pl-5 col-7">
-                        <h4 class="title">${cartProducts[id].title}</h4>
-                        <div class="price"> price : ${cartProducts[id].price}</div>
-                    </div>
-                    <div class="btn btn-outline-danger mt-5"  style="height: 40px;"   onclick= "removecart(${id})" >Remove</div>
-            
+
+function cartProduct(cartProducts, id) {
+    let item = cartProducts[id];
+    return `
+    <div class="box d-flex w-100 pt-5 pb-3 text-dark" style="border-bottom:2px black solid;">
+        <img src="${item.source}" width="100px" alt="" style="border-radius: 20px;">
+        <div class="boxBody pl-5 col-7">
+            <h4 class="title">${item.title}</h4>
+            <div class="price">price: ${item.price} EGP</div>
+            <div class="amount mt-2">
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-sm btn-warning mr-2 px-3" onclick="decreaseQuantity(${item.id})">-</button>
+                    <span>${item.amount}</span>
+                    <button class="btn btn-sm btn-warning ml-2 px-3" onclick="increaseQuantity(${item.id})">+</button>
                 </div>
-                `
+                <p class="mt-2">Total: ${item.price * item.amount} EGP</p>
+            </div>
+        </div>
+        <div class="ml-auto mr-2 btn btn-outline-danger mt-5" style="height: 40px;" onclick="removecart(${id})">
+            <i class="fa-solid fa-trash"></i>
+        </div>
+    </div>
+    `;
+}
+function refreshCart() {
+    document.getElementById('cartcontent').innerHTML = "";
+    showcart();
+    getTotal();
+    get_cart_number();
+    get_Products_input_names();
 }
 
+function increaseQuantity(productId) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let item = cart.find(p => p.id === productId);
+    if (item) {
+        item.amount += 1;
+        localStorage.setItem('cart', JSON.stringify(cart));
+        refreshCart();
+    }
+}
+function decreaseQuantity(productId) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let itemIndex = cart.findIndex(p => p.id === productId);
 
+    if (itemIndex !== -1) {
+        if (cart[itemIndex].amount > 1) {
+            cart[itemIndex].amount -= 1;
+        } else {
+            cart.splice(itemIndex, 1); // حذف المنتج إذا وصلت الكمية للصفر
+        }
+        localStorage.setItem('cart', JSON.stringify(cart));
+        refreshCart();
+    }
+}
 
 function showcart(){
     let cartcontent=document.getElementById('cartcontent');
@@ -129,14 +185,14 @@ cartcontent.innerHTML="";
 
 }
 
-function getTotal(){
+function getTotal() {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];   
-    let result=0;
-    for(let i=0; i<cart.length;i++){
-          result +=cart[i].price
+    let result = 0;
+    for (let i = 0; i < cart.length; i++) {
+        result += cart[i].price * cart[i].amount;
     }
     let total = document.getElementById('total');
-    total.innerHTML=`Total : ${result} EGP`;
+    total.innerHTML = `Total : ${result} EGP`;
 }
 
 
@@ -144,8 +200,13 @@ function getTotal(){
 
 function get_cart_number(){
     if(localStorage.getItem('cart')){
-        let count = JSON.parse( localStorage.getItem('cart') )
-        document.getElementById('cartCounter').innerHTML=`<i class="fa-solid fa-cart-plus h5 p-2  bg-success" style="border-radius:20px"> ${count.length} `;
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        let totalItems = 0;
+        
+        for(let i = 0; i < cart.length; i++){
+            totalItems += cart[i].amount || 1;  
+        }
+        document.getElementById('cartCounter').innerHTML=`<i class="fa-solid fa-cart-plus h5 p-2  bg-success" style="border-radius:20px"> ${totalItems} `;
       }
 }
 
@@ -153,7 +214,7 @@ function get_Products_input_names(){
     let cart = JSON.parse(localStorage.getItem('cart')) || []; 
     let result="";
     for(let i=0; i<cart.length;i++){
-          result +=cart[i].title+"\n \n  ,\n \n  ";
+          result +=`${cart[i].id}->${cart[i].title}=>${cart[i].amount};` ;
     }
     let input = document.getElementById('Products_input_names');
     input.value=result;
