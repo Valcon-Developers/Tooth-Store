@@ -1,10 +1,8 @@
 let packge=[
-    // {id:1,title:"Semester 1",price:15000,source:"imgs/Box.jpg",description: "packges/semester1",order:""},
-    // {id:2,title:"Semester 2",price:15000,source:"imgs/Box.jpg",description: "packges/semester2",order:""},
-    // {id:3,title:"Semester 3",price:15000,source:"imgs/Box.jpg",description: "packges/semester2",order:"التوصيل مجانا"},
-    {id:4,title:"Semester 4",price:6300 ,price2:"",source:"imgs/Box.jpg",description: "packges/semester4",order:"التوصيل مجانا"},
-    {id:5,title:"5 Frindes offer",price:30500,price2:"31500 EGP",source:"imgs/Box.jpg",description: "packges/semester4",order:""},
-    // {id:5,title:"Semester 5",price:10000,source:"imgs/Box.jpg",description: "packges/semester4",order:"التوصيل مجانا"},
+    {id:101,title:"Semester 3",price:0,price2:"",source:"imgs/Box.jpg",description: "packges/semester3.pdf",order:"التوصيل مجانا"},
+    {id:102,title:"Semester 4",price:0,price2:"",source:"imgs/Box.jpg",description: "packges/semester4.pdf",order:""},
+    {id:103,title:"Semester 5",price:0,price2:"",source:"imgs/Box.jpg",description: "packges/semester5.pdf",order:""},
+    {id:104,title:"Semester 6",price:0,price2:"",source:"imgs/Box.jpg",description: "packges/semester6.pdf",order:""},
     
     
 ]
@@ -45,10 +43,8 @@ document.addEventListener("DOMContentLoaded", function() {
     get_cart_number()
 });
 
-function showDetailes(id){
-    id=4;
-    // window.location.href=`${packge[id].description}`;
-    window.location.href=`packges/semester${id}.html`;    
+function showDetailes(i){
+window.open(packge[i].description, "_blank");   
 }
 
 
