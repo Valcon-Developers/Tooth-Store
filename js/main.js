@@ -8,7 +8,7 @@ function card(i){
         
         <div class="card  text-dark card-product search-card mt-1" style="border:solid 2px #17a2b8; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); grid-gap: 10px; max-height: 390px;">
             <div class="card-img img-fluid text-center" onclick="showDetailes(${i})" style="height: 200px; overflow:hidden;">
-                <img src=${products[i].source} alt=""  style=" ">
+                <img   loading="lazy"  src=${products[i].source} alt=""  style=" ">
             </div>
             <div class="card-body" onclick="showDetailes(${i})" style="display: flex; flex-direction: column; justify-content: space-between;margin-top:-40px">
                 <div class="card-title search-title">${products[i].title}</div>
