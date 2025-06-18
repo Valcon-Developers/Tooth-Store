@@ -6,7 +6,7 @@ function card(i){
     return(
         `
         
-        <div class="card  text-dark card-product search-card mt-1" style="border:solid 2px #17a2b8; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); grid-gap: 10px; max-height: 390px;">
+        <div class="card semester${products[i].cat} text-dark card-product search-card mt-1" style="border:solid 2px #17a2b8; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); grid-gap: 10px; max-height: 390px;">
             <div class="card-img img-fluid text-center" onclick="showDetailes(${i})" style="height: 200px; overflow:hidden;">
                 <img   loading="lazy"  src=${products[i].source} alt=""  style=" ">
             </div>
@@ -221,4 +221,29 @@ function get_Products_input_names(){
 }
 //////////////////////////////////////////////////////////////////////////////////////////
 
+function filterByCat(type){
+    let hidden =  document.getElementsByClassName(`search-card`)
+    document.querySelector(".active").classList.remove("active")
 
+    if(type=='all'){
+        
+        for(let i=0 ; i<hidden.length;i++){
+        hidden[i].style.display='';
+        }
+        document.querySelector(".all").classList.add("active");
+
+    }else{    
+        let apper=  document.getElementsByClassName(`semester${type}`)
+
+        for(let i=0 ; i<hidden.length;i++){
+        hidden[i].style.display='none';
+        }
+        for(let i=0 ; i<apper.length;i++){
+        apper[i].style.display='';
+        }
+        document.querySelector(`.A${type}`).classList.add("active");
+
+    }
+
+
+}
