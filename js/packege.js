@@ -1,8 +1,10 @@
 let packge=[
     {id:101,title:"Semester 3",price:0,price2:"",source:"imgs/Box.jpg",description: "packges/semester3.pdf",order:"التوصيل مجانا"},
     {id:102,title:"Semester 4",price:0,price2:"",source:"imgs/Box.jpg",description: "packges/semester4.pdf",order:""},
-    {id:103,title:"Semester 5",price:0,price2:"",source:"imgs/Box.jpg",description: "packges/semester5.pdf",order:""},
-    {id:104,title:"Semester 6",price:0,price2:"",source:"imgs/Box.jpg",description: "packges/semester6.pdf",order:""},
+    {id:103,title:"Full Year 2",price:0,price2:"",source:"imgs/Box.jpg",description: "packges/year2.pdf",order:"التوصيل مجانا"},
+    {id:104,title:"Semester 5",price:0,price2:"",source:"imgs/Box.jpg",description: "packges/semester5.pdf",order:""},
+    {id:105,title:"Semester 6",price:0,price2:"",source:"imgs/Box.jpg",description: "packges/semester6.pdf",order:""},
+    {id:106,title:"Full Year 3",price:0,price2:"",source:"imgs/Box.jpg",description: "packges/year3.pdf",order:"التوصيل مجانا"},
     
     
 ]
