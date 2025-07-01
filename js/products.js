@@ -55,7 +55,7 @@ let products=[
     {id:54,title:"Gloves",price:150,price2:135,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/gloves.jpeg',description:"",cat:3},
     {id:55,title:"Oil Spray",price:140,price2:130,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/oil%20spray.jpeg',description:"",cat:3},
     {id:56,title:"Acrylic teeth size 16",price:70,price2:62,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/acrylic%20teetyh%20size%2016.jpeg',description:"Acrylic resin teeth size 16 (Anterior and posterior)",cat:3},
-    {id://57,title:"low speed contra strong",price:3300,price2:2900,source:'https://github.com/Valcon-Developers/images-product/blob/main/conta%20low%20speed.jpg?raw=true',description:"",cat:3},
+    //{id:57,title:"low speed contra strong",price:3300,price2:2900,source:'https://github.com/Valcon-Developers/images-product/blob/main/conta%20low%20speed.jpg?raw=true',description:"",cat:3},
     {id:58,title:"Polishing Brushes X 10",price:30,price2:25,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/polishing%20brush.jpeg',description:"",cat:4},
     {id:59,title:"Round Bur High",price:40,price2:32,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/burs%20hight.jpg',description:"",cat:4},
     {id:60,title:"Hight diamond stone x 2",price:20,price2:10,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/stons%20hight.jpeg',description:" (  tapered with round end size 1,2 & Tapered with flat end size 1,2 &  Fine tapered stone. (Short shank and long shank) &  Finishing stones",cat:4},
