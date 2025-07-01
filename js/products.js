@@ -76,7 +76,7 @@ let products=[
     {id:75,title:"PHOSPHORIC ACID ETCH",price:40,price2:25,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/phosphoric%20acid%20etch.jpg',description:"PHOSPHORIC ACID ETCH WITH DISPOSABLE TIPS ",cat:4},
     {id:76,title:"Files Holder"        ,price:25,price2:20,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/file%20holder.jpeg',description:"FILE HOLDER OR BANKER’S SPONGE",cat:4},
     {id:77,title:"ENDODONTIC RULER"    ,price:15,price2:10,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/endodontic%20ruler.jpg',description:"",cat:4},
-    {id:80,title:"Sealers",price:0,price2:0,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/sealer.png',description:"",cat:5},
+    {id:80,title:"Sealers",price:0,price2:0,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/sealer.jpeg',description:"",cat:5},
     {id:81,title:"gun",price:0,price2:0,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/gun.jpg',description:"",cat:5},
     {id:82,title:"Post & core ",price:0,price2:0,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/post%20and%20core.png',description:"",cat:6},
     {id:83,title:"celluloid  crown anterior ",price:0,price2:0,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/celluloid%20crown.webp',description:"",cat:6},
