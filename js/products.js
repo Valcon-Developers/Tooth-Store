@@ -85,10 +85,10 @@ let products=[
     {id:86,title:"Sensor apixia",price:3500,price2:0,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/sensor.jpg',description:"",cat:5},
     {id:87,title:"Charm Flex",price:430,price2:0,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/charm.jpg',description:"",cat:6},
     {id:88,title:"Apix Locator",price:8250,price2:8000,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/locator.jpeg',description:"",cat:6},
-    {id:89,title:"Sedation Needel Korean",price:245,price2:240,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/needel.avif',description:"",cat:6},
+    {id:89,title:"Sedation Needel",price:0,price2:0,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/needel.avif',description:"",cat:6},
     {id:90,title:"Sedation carboles X 2",price:50,price2:33,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/carboles.jpg',description:"",cat:6},
     {id:91,title:"Excavator",price:45,price2:32,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/excavator.jpg',description:"",cat:5},
-    {id:92,title:"Sedation Syrange",price:0,price2:0,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/syrange.jpg',description:"",cat:6},
+    {id:92,title:"Sedation Syrange korean",price:245,price2:240,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/syrange.jpg',description:"",cat:6},
     {id:93,title:"Endo Motor (dentist)",price:4750,price2:4500,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/endomotor.jpg',description:"",cat:6},
    
 ]
