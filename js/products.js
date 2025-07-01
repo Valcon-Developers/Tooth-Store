@@ -27,7 +27,7 @@ let products=[
     {id:26,title:"Air Motor Dentist",price:850,price2:625,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/air%20motor.jpeg',description:"",cat:3},
     {id:27,title:"Straight Handpiece",price:750,price2:720,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/straight%20handpiece.webp',description:"",cat:3},
     {id:28,title:"Magnet cast",price:230,price2:210,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/magnetic%20cast.jpg',description:"Magnet cast + Acrylic anterior and posterior teeth not Elbanna Cast",cat:3},
-    {id:29,title:"Low diamond stones X 5",price:100,price2:80,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/low%20stones.jpg',description:" (,cat:3},
+    {id:29,title:"Low diamond stones X 5",price:100,price2:80,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/low%20stones.jpg',description:"",cat:3},
     {id:30,title:"Burs Low Speed X 4",price:160,price2:128,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/low%20burs.jpg',description:"",cat:3},
     {id:31,title:"Tofflemire Matrix Holder",price:95,price2:93,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/tofflemire%20matrix.jpeg',description:"",cat:3},
     {id:32,title:"Tofflemire Matrix Bands",price:10,price2:7,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/toddlemire%20matrix%20band.jpg',description:"",cat:3},
