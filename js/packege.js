@@ -1,10 +1,10 @@
 let packge=[
-    {id:101,title:"Semester 3",price:0,price2:"",source:"imgs/Box.jpg",description: "packges/semester3.pdf",order:"التوصيل مجانا"},
-    {id:102,title:"Semester 4",price:0,price2:"",source:"imgs/Box.jpg",description: "packges/semester4.pdf",order:""},
-    {id:103,title:"Full Year 2",price:0,price2:"",source:"imgs/Box.jpg",description: "packges/year2.pdf",order:"التوصيل مجانا"},
-    {id:104,title:"Semester 5",price:0,price2:"",source:"imgs/Box.jpg",description: "packges/semester5.pdf",order:""},
-    {id:105,title:"Semester 6",price:0,price2:"",source:"imgs/Box.jpg",description: "packges/semester6.pdf",order:""},
-    {id:106,title:"Full Year 3",price:0,price2:"",source:"imgs/Box.jpg",description: "packges/year3.pdf",order:"التوصيل مجانا"},
+    {id:101,title:"Semester 3",price:13490,price2:"",source:"imgs/Box.jpg",description: "packges/semester3.pdf",order:"التوصيل مجانا"},
+    {id:102,title:"Semester 4",price:5650,price2:"",source:"imgs/Box.jpg",description: "packges/semester4.pdf",order:""},
+    {id:103,title:"Full Year 2",price:18750,price2:"",source:"imgs/Box.jpg",description: "packges/year2.pdf",order:"البوكس هدية"},
+    {id:104,title:"Semester 5",price:6860,price2:"",source:"imgs/Box.jpg",description: "packges/semester5.pdf",order:""},
+    {id:105,title:"Semester 6",price:1270,price2:"",source:"imgs/Box.jpg",description: "packges/semester6.pdf",order:""},
+    {id:106,title:"Full Year 3",price:8130,price2:"",source:"imgs/Box.jpg",description: "packges/year3.pdf",order:""},
     
     
 ]
@@ -20,10 +20,10 @@ function card(i){
                 <img src=${packge[i].source} alt=""  style=" overflow: hidden;object-fit: cover;">
             </div>
             <div class="card-body bg-light" onclick="showDetailes(${i})" style="display: flex; flex-direction: column; justify-content: space-between;"> 
-                <div class="card-title h5 search-title">${packge[i].title}</div>
-                <h5 style="text-decoration: line-through;">${packge[i].price2}</h5>
-                <div class="card-text h5">${packge[i].price} EGP</div>
-                <h5>${packge[i].order}</h5>
+            ${packge[i].order ? `<h5 class='alert alert-success' style="border-radius:15px">${packge[i].order}</h5>` : ""}
+            <div class="card-title h5 search-title">${packge[i].title}</div>
+            <h5 style="text-decoration: line-through;">${packge[i].price2}</h5>
+            <div class="card-text h5">${packge[i].price} EGP</div>
             </div>
             <div class="container">
                 <div class="btn btn-outline-info w-100 mx-auto mb-2" style="border-radius:10px;" onclick="addToCart(${i})">

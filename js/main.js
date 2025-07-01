@@ -12,9 +12,9 @@ function card(i){
             </div>
             <div class="card-body" onclick="showDetailes(${i})" style="display: flex; flex-direction: column; justify-content: space-between;margin-top:-40px">
                 <div class="card-title search-title">${products[i].title}</div>
-                <div class="card-text h5">${products[i].price} EGP</div>
+                <div class="card-text h5 print">${products[i].price} EGP</div>
             </div>
-            <div class="container">
+            <div class="container print">
                 <div class="btn btn-outline-info w-100 mx-auto mb-2" style="border-radius:10px;" onclick="addToCart(${i})">
                     Add To Cart <i class="fa-solid fa-cart-plus"></i>
                 </div>

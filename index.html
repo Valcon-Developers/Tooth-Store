@@ -20,7 +20,13 @@
 <meta property="og:image:height" content="630" />
 <meta property="og:url" content="https://valcon-developers.github.io/Tooth-Store/" />
 <meta property="og:type" content="website" />
-
+<style>
+  @media print{
+    .print {
+      display: none;
+    }
+  }
+</style>
         
     <style>
 /* النجمة: تكبير + دوران */
@@ -66,7 +72,7 @@
 <body class="bg-light">
 
     <!-- start navbar -->
-    <div id="navbar" class="sticky-top  navbar-light bg-light text-dark p-0">
+    <div id="navbar" class="sticky-top  navbar-light bg-light text-dark p-0 print">
         <nav class="container navbar navbar-expand-lg navbar-light  ">
             <a class="navbar-brand text-info"style="margin-top:-10px;font-size:23px" href="index.html"><img src="imgs/unnamed.jpg"  style=" width:45px; max-height: 40px;"  alt=""><img src="imgs/LOGO4.jpg"  style=" width:105px; max-height: 40px;"  alt=""></a>
 
@@ -128,7 +134,7 @@
     </div>
     <!-- end navbar -->
     <!-- start landing -->
-     <div class="landing" id="landing">
+     <div class="landing print" id="landing">
         <div class="container  text-dark p-5">
             <h1 class="text-info">Professional Dental Web Store</h1>
             <p class="pt-2 pb-2">All What you Need Are Here</p>
@@ -170,7 +176,7 @@
 
     <!-- start products -->
     <div class="container" id="tools">
-        <div class="text-center my-4">
+        <div class="text-center my-4 print">
             <button class="btn btn-outline-info m-1 all active" onclick="filterByCat('all')">All</button>
             <button class="btn btn-outline-info m-1 A3" onclick="filterByCat(3)">semester 3</button>
             <button class="btn btn-outline-info m-1 A4" onclick="filterByCat(4)">semester 4</button>
@@ -185,7 +191,7 @@
     <!-- end products -->
 
     <!-- Start Missing Tools Section -->
-<div id="contact" class="bg-light">
+<div id="contact" class="bg-light print">
   <div class="container my-5 py-5">
     <div class="card shadow-lg border-0 rounded-4 overflow-hidden animate__animated animate__fadeInUp">
       <div class="row no-gutters flex-wrap">
@@ -225,7 +231,7 @@
     
   <!-- start footer -->
 
-    <footer id="footer" class="text-light text-center bg-info h6 p-3 mt-5 mb-0">Developed By <a href="https://www.instagram.com/bdljwd478?igsh=MXNlNWJsaWJtb3A5cA==" target="_blank">Mohammed Abdelgawad</a></footer>
+    <footer id="footer" class="text-light text-center bg-info h6 p-3 mt-5 mb-0 print">Developed By <a href="https://www.instagram.com/bdljwd478?igsh=MXNlNWJsaWJtb3A5cA==" target="_blank">Mohammed Abdelgawad</a></footer>
 
     <!-- <script src="main.js"></script> -->
     <script>

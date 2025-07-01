@@ -60,7 +60,7 @@ let products=[
     {id:59,title:"Round Bur High",price:40,price2:32,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/burs%20hight.jpg',description:"",cat:4},
     {id:60,title:"Hight diamond stone x 2",price:20,price2:10,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/stons%20hight.jpeg',description:"",cat:4},
     {id:61,title:"charm temprycrown",price:1550,price2:1500,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/temposray%20crown.jpg',description:"",cat:5},
-    {id:62,title:"Isolation Kit",price:1240,price2:1200,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/isolation%20kit.jpeg',description:"",cat:3},
+    {id:62,title:"Isolation Kit With Rubber dam",price:1240,price2:1200,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/isolation%20kit.jpeg',description:"",cat:3},
     {id:63,title:"Spreader",price:85,price2:75,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/spreader.jpg',description:"",cat:5},
     {id:64,title:"gutta percha 45-80",price:100,price2:75,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/gutta%20bercha%2045-80.jpg',description:" 15 - 40",cat:5},    
     {id:65,title:"gutta percha 15-40",price:100,price2:75,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/gutta%20bercha%2015-40.webp',description:" 45 - 80",cat:5},    
@@ -84,11 +84,11 @@ let products=[
     {id:85,title:"Remove Design Wax",price:270,price2:220,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/design%20wax.jpg',description:"",cat:4},
     {id:86,title:"Sensor apixia",price:3500,price2:0,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/sensor.jpg',description:"",cat:5},
     {id:87,title:"Charm Flex",price:430,price2:0,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/charm.jpg',description:"",cat:6},
-    {id:88,title:"Apix Locator",price:8250,price2:8000,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/locator.jpeg',description:"",cat:6},
+    // {id:88,title:"Apix Locator",price:8250,price2:8000,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/locator.jpeg',description:"",cat:6},
     {id:89,title:"Sedation Needel x 4",price:20,price2:0,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/needel.avif',description:"",cat:6},
     {id:90,title:"Sedation carboles X 2",price:50,price2:33,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/carboles.jpg',description:"",cat:6},
     {id:91,title:"Excavator",price:45,price2:32,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/excavator.jpg',description:"",cat:5},
     {id:92,title:"Sedation Syrange korean",price:245,price2:240,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/syrange.jpg',description:"",cat:6},
-    {id:93,title:"Endo Motor (dentist)",price:4750,price2:4500,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/endomotor.jpg',description:"",cat:6},
-   
+    // {id:93,title:"Endo Motor (dentist)",price:4750,price2:4500,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/endomotor.jpg',description:"",cat:6},
+    
 ]
