@@ -1,7 +1,10 @@
 let products=[    
+    {id:94,title:"wax blocks",price:20,source:'imgs/waxblock.webp',description:"",cat:1},
+    {id:2,title:"Wax knife",price:45,source:"https://raw.githubusercontent.com/Valcon-Developers/images-product/main/wax%20knife.jpeg",description:"",cat:1},
+    {id:3,title:"Wax Carver",price:45,source:"https://raw.githubusercontent.com/Valcon-Developers/images-product/main/wax%20carver.jpeg",description:"",cat:1},
+    {id:19,title:"Mask",price:40,source:"https://raw.githubusercontent.com/Valcon-Developers/images-product/main/mask.jpeg",description:"",cat:1},
+    {id:17,title:"Napkin",price:40,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/napkin.jpeg',description:"",cat:1},
     {id:1,title:"Micromotor with contra (china)",price:6750,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/micromotor.jpg',description:"",cat:3},
-    {id:2,title:"Wax knife",price:45,source:"https://raw.githubusercontent.com/Valcon-Developers/images-product/main/wax%20knife.jpeg",description:"",cat:3},
-    {id:3,title:"Wax Carver",price:45,source:"https://raw.githubusercontent.com/Valcon-Developers/images-product/main/wax%20carver.jpeg",description:"",cat:3},
     {id:4,title:"Basbosa knife ",price:20,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/basbosakinife.webp',description:"",cat:3},
     {id:5,title:"Pink wax (cavex)",price:170,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/pink%20wax.jpeg',description:"",cat:3},
     {id:6,title:"Glass slabs x2",price:20,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/glass%20slap.jpeg',description:"",cat:3},
@@ -15,9 +18,7 @@ let products=[
     {id:14,title:"Surgical handle",price:35,source:"https://raw.githubusercontent.com/Valcon-Developers/images-product/main/surgical%20handel.jpeg",description:"",cat:3},   
     {id:15,title:"Surgical blade size 15 X3",price:10,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/surgical%20blade.jpg',description:"",cat:3},
     {id:16,title:"Separating medium",price:8,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/separating%20medium.jpg',description:"",cat:3},
-    {id:17,title:"Napkin",price:40,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/napkin.jpeg',description:"",cat:3},
     {id:18,title:"edentulous stone casts",price:20,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/edentulas%20stone%20casts.jpeg',description:"upper and lower edentulous stone casts",cat:3},
-    {id:19,title:"Mask",price:40,source:"https://raw.githubusercontent.com/Valcon-Developers/images-product/main/mask.jpeg",description:"",cat:3},
     {id:20,title:"Dental film barrier",price:150,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/dental%20film%20barier.jpg',description:"",cat:3},
     {id:21,title:"Toolbox size 17",price:390,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/box.jpg',description:"",cat:3},
     {id:22,title:"Mirror + Hand",price:45,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/mirror.jpg',description:"",cat:3},
@@ -90,5 +91,4 @@ let products=[
     {id:91,title:"Excavator",price:45,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/excavator.jpg',description:"",cat:5},
     {id:92,title:"Sedation Syrange korean",price:245,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/syrange.jpg',description:"",cat:6},
     {id:93,title:"Endo Motor (dentist)",price:4750,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/endomotor.jpg',description:"",cat:6},
-    
 ]
