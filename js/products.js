@@ -6,7 +6,7 @@ let products=[
     {id:17,title:"Napkin",price:40,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/napkin.jpeg',description:"",cat:1},
     {id:8,title:"Torch",price:150,source:"https://raw.githubusercontent.com/Valcon-Developers/images-product/main/torch.jpeg",description:"",cat:1},
     {id:8,title:"gas",price:85,source:"imgs/gas.jpg",description:"",cat:1},
-    {id:1,title:"Micromotor with contra (china)",price:6750,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/micromotor.jpg',description:"",cat:3},
+    {id:1,title:"Micromotor with contra (china)",price:4650,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/micromotor.jpg',description:"",cat:3},
     {id:4,title:"Basbosa knife ",price:20,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/basbosakinife.webp',description:"",cat:3},
     {id:5,title:"Pink wax (cavex)",price:170,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/pink%20wax.jpeg',description:"",cat:3},
     {id:6,title:"Glass slabs x2",price:20,source:'https://raw.githubusercontent.com/Valcon-Developers/images-product/main/glass%20slap.jpeg',description:"",cat:3},
