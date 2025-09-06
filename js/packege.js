@@ -1,8 +1,8 @@
 let packge=[
     {id:300,title:"Semester 1",price:510,price2:"",source:"imgs/Box.jpg",description: "packges/semester1.pdf",order:""},
-    {id:301,title:"Semester 3",price:13490,price2:"",source:"imgs/Box.jpg",description: "packges/semester3.pdf",order:"التوصيل مجانا"},
+    {id:301,title:"Semester 3",price:11390,price2:"",source:"imgs/Box.jpg",description: "packges/semester3.pdf",order:"التوصيل مجانا"},
     {id:302,title:"Semester 4",price:5650,price2:"",source:"imgs/Box.jpg",description: "packges/semester4.pdf",order:""},
-    {id:303,title:"Full Year 2",price:18750,price2:"",source:"imgs/Box.jpg",description: "packges/year2.pdf",order:"البوكس هدية"},
+    {id:303,title:"Full Year 2",price:16650,price2:"",source:"imgs/Box.jpg",description: "packges/year2.pdf",order:"البوكس هدية"},
     {id:304,title:"Semester 5",price:6860,price2:"",source:"imgs/Box.jpg",description: "packges/semester5.pdf",order:""},
     {id:305,title:"Semester 6",price:1270,price2:"",source:"imgs/Box.jpg",description: "packges/semester6.pdf",order:""},
     {id:306,title:"Full Year 3",price:8130,price2:"",source:"imgs/Box.jpg",description: "packges/year3.pdf",order:""},
@@ -88,4 +88,5 @@ function get_cart_number(){
         document.getElementById('cartCounter').innerHTML=`<i class="fa-solid fa-cart-plus h5 p-2  bg-success" style="border-radius:20px"> ${totalItems} `;
       }
 }
+
 
